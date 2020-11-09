@@ -1,0 +1,26 @@
+/* Global */
+body {
+    margin: 0px;
+}
+/* Global */
+
+.accordion {
+    background-color: #eee; 
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    padding: 18px;
+    border: none;
+    outline: none;
+}
+
+.accordion:hover, .active {
+    background-color: #ccc;
+}
+
+.content {
+    display: none;
+    padding: 0 18px;
+    background-color: #fff;
+    overflow: hidden;
+}
