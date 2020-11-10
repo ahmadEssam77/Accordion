@@ -4,6 +4,7 @@ body {
 }
 /* Global */
 
+/* accordion button */
 .accordion {
     background-color: #eee; 
     width: 100%;
@@ -12,15 +13,32 @@ body {
     padding: 18px;
     border: none;
     outline: none;
+    /* transition: 0.4s; */
+}
+/* accordion button */
+
+.accordion::after {
+    content: '\02795'; /* unicode character for "plus" sign */
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.active::after {
+    content: '\2796' /* unicode character for "minus" sign */
 }
 
 .accordion:hover, .active {
     background-color: #ccc;
 }
 
+/* content */
 .content {
     display: none;
     padding: 0 18px;
     background-color: #fff;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
 }
+/* content */
